@@ -440,6 +440,9 @@ img { max-width:100%; display:block; }
     emptyEl.style.display = visible.length === 0 ? 'block' : 'none';
     paginationEl.style.display = visible.length > 12 ? 'flex' : 'none';
   }
+
+  // Explicit initial render — all filters at 'all', all cards visible.
+  apply();
 })();
 </script>
 
