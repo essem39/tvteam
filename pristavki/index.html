@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Android TV Box купить — каталог 2026 | TVTIME</title>
+<meta name="description" content="Каталог Android TV Box и стриминговых приставок 2026. Фильтры по цене, ОЗУ, 4K, назначению. Xiaomi, Fire TV, Ugoos и другие модели.">
+<link rel="canonical" href="https://tvteam.online/pristavki/">
+<style>
+:root {
+  --bg: #0f0f1a;
+  --bg-card: #16162a;
+  --bg-card-hover: #1e1e3a;
+  --text: #e0e0e0;
+  --text-muted: #8888a0;
+  --accent: #ff6b35;
+  --accent-hover: #ff8555;
+  --green: #00c853;
+  --border: #2a2a4a;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+  --maxw: 1200px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { text-decoration:none; color: inherit; }
+img { max-width:100%; display:block; }
+
+/* Header */
+.header {
+  position: sticky; top:0; z-index:100;
+  background: rgba(15,15,26,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  max-width: var(--maxw); margin:0 auto;
+  padding: 16px 24px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.logo { font-size: 22px; font-weight:800; letter-spacing:-0.5px; }
+.logo span { color: var(--accent); }
+.nav { display:flex; gap: 28px; }
+.nav a { color: var(--text-muted); font-size:14px; font-weight:500; transition:0.2s; }
+.nav a:hover { color: var(--text); }
+.nav .active { color: var(--accent); }
+
+/* Page hero */
+.page-hero {
+  max-width: var(--maxw); margin:0 auto;
+  padding: 48px 24px 8px;
+}
+.page-hero h1 {
+  font-size: clamp(26px, 4vw, 38px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+.page-hero p {
+  font-size: 15px; color: var(--text-muted);
+  max-width: 680px; margin-bottom: 6px;
+}
+.count-badge {
+  display:inline-block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 6px 14px; border-radius: 100px;
+  font-size: 13px; color: var(--text-muted);
+  margin-top: 8px;
+}
+.count-badge strong { color: var(--accent); }
+
+/* CTA Buttons */
+.btn {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding: 10px 16px; border-radius: var(--radius);
+  font-size: 13px; font-weight: 600;
+  border: none; cursor: pointer; transition: 0.2s;
+}
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+.btn-secondary { background: var(--bg-card); color: var(--text); border: 1px solid var(--border); }
+.btn-secondary:hover { background: var(--bg-card-hover); }
+
+/* Filters */
+.filters {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 24px 24px 8px;
+  display:flex; flex-wrap:wrap; gap: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.filter-group { display:flex; flex-direction:column; gap:8px; }
+.filter-group .label { font-size:11px; text-transform:uppercase; letter-spacing:0.5px; color: var(--text-muted); }
+.filter-options { display:flex; flex-wrap:wrap; gap:8px; }
+.filter-chip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px; font-weight:500;
+  padding: 7px 14px; border-radius: 100px;
+  cursor: pointer; transition: 0.15s;
+}
+.filter-chip:hover { border-color: #3a3a5a; color: var(--text); }
+.filter-chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filter-select {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13px;
+  padding: 8px 12px; border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Device Grid */
+.devices {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 32px 24px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media (max-width: 980px) { .devices { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .devices { grid-template-columns: 1fr; } }
+
+.device-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: 0.25s;
+  display:flex; flex-direction:column;
+}
+.device-card:hover { transform: translateY(-4px); border-color: #3a3a5a; box-shadow: var(--shadow); }
+.device-img {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, #1a1a35 0%, #252550 100%);
+  display:flex; align-items:center; justify-content:center;
+  font-size: 64px;
+  position: relative;
+}
+.device-badge {
+  position: absolute; top: 12px; left: 12px;
+  background: var(--green); color: #000;
+  font-size: 11px; font-weight: 700;
+  padding: 4px 10px; border-radius: 6px;
+  text-transform: uppercase;
+}
+.device-badge.budget { background: #ffd600; color: #000; }
+.device-badge.premium { background: #ff6b35; color: #fff; }
+.device-badge.top { background: #00c853; color: #000; }
+.device-badge.gaming { background: #7c4dff; color: #fff; }
+.device-info { padding: 20px; flex:1; display:flex; flex-direction:column; }
+.device-info h3 { font-size: 18px; margin-bottom: 6px; }
+.device-info .price { font-size: 22px; font-weight: 700; color: var(--accent); margin-bottom: 12px; }
+.device-info .price span { font-size: 13px; color: var(--text-muted); font-weight: 400; }
+.device-specs { display:flex; flex-wrap:wrap; gap: 8px; margin-bottom: 16px; }
+.spec { background: rgba(255,255,255,0.04); padding: 4px 10px; border-radius: 6px; font-size: 12px; color: var(--text-muted); }
+.device-actions { margin-top: auto; display:flex; gap: 10px; flex-wrap:wrap; }
+.device-actions .btn { flex:1; min-width: 110px; }
+
+/* Empty state */
+.empty-state {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 60px 24px; text-align:center;
+  color: var(--text-muted); display:none;
+}
+
+/* Pagination (scaffolding for 12+) */
+.pagination {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 0 24px 60px;
+  display:flex; justify-content:center; gap: 8px;
+}
+.pagination a, .pagination span {
+  min-width: 36px; height:36px;
+  display:flex; align-items:center; justify-content:center;
+  border-radius: 8px; font-size:13px;
+  background: var(--bg-card); border: 1px solid var(--border); color: var(--text-muted);
+}
+.pagination .current { background: var(--accent); color:#fff; border-color: var(--accent); }
+
+/* Footer */
+.footer { border-top: 1px solid var(--border); padding: 40px 24px; text-align: center; color: var(--text-muted); font-size: 13px; }
+.footer a { color: var(--text-muted); margin: 0 12px; }
+.footer a:hover { color: var(--text); }
+
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .page-hero { padding: 32px 20px 8px; }
+  .filters { padding: 20px 20px 8px; }
+  .devices { padding: 24px 20px 30px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "itemListElement": [
+    {
+      "@type": "ListItem", "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "Xiaomi TV Stick 4K",
+        "url": "https://tvteam.online/pristavki/xiaomi-tv-stick-4k/",
+        "offers": { "@type": "Offer", "price": "35", "priceCurrency": "USD" }
+      }
+    },
+    {
+      "@type": "ListItem", "position": 2,
+      "item": {
+        "@type": "Product",
+        "name": "Amazon Fire TV Stick 4K Max",
+        "url": "https://tvteam.online/pristavki/fire-tv-stick-4k/",
+        "offers": { "@type": "Offer", "price": "55", "priceCurrency": "USD" }
+      }
+    },
+    {
+      "@type": "ListItem", "position": 3,
+      "item": {
+        "@type": "Product",
+        "name": "Ugoos AM6B Plus",
+        "url": "https://tvteam.online/pristavki/ugoos-am6b-plus/",
+        "offers": { "@type": "Offer", "price": "120", "priceCurrency": "USD" }
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="/" class="logo">TV<span>TIME</span></a>
+    <nav class="nav">
+      <a href="/pristavki/" class="active">Каталог</a>
+      <a href="/sravnenie/">Сравнение</a>
+      <a href="/nastroit-iptv/">Настройка IPTV</a>
+      <a href="/pleery/">Плееры</a>
+      <a href="/faq/">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <h1>Android TV Box и стриминговые приставки</h1>
+  <p>Подборка приставок для IPTV, стриминга и игр — с честными характеристиками и ссылками на проверенные магазины. Каждая модель совместима с TV.TEAM.</p>
+  <div class="count-badge"><strong id="deviceCount">3</strong> модели в каталоге</div>
+</div>
+
+<div class="filters" id="filters">
+  <div class="filter-group">
+    <span class="label">Цена</span>
+    <div class="filter-options" data-filter="price">
+      <button class="filter-chip active" data-value="all">Все</button>
+      <button class="filter-chip" data-value="under50">До $50</button>
+      <button class="filter-chip" data-value="50-100">$50–100</button>
+      <button class="filter-chip" data-value="over100">$100+</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <span class="label">ОЗУ</span>
+    <div class="filter-options" data-filter="ram">
+      <button class="filter-chip active" data-value="all">Все</button>
+      <button class="filter-chip" data-value="2">2 ГБ</button>
+      <button class="filter-chip" data-value="4">4 ГБ</button>
+      <button class="filter-chip" data-value="8">8 ГБ</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <span class="label">Разрешение</span>
+    <div class="filter-options" data-filter="res">
+      <button class="filter-chip active" data-value="all">Все</button>
+      <button class="filter-chip" data-value="4k">4K</button>
+      <button class="filter-chip" data-value="8k">8K</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <span class="label">Назначение</span>
+    <div class="filter-options" data-filter="use">
+      <button class="filter-chip active" data-value="all">Все</button>
+      <button class="filter-chip" data-value="iptv">IPTV</button>
+      <button class="filter-chip" data-value="games">Игры</button>
+      <button class="filter-chip" data-value="streaming">Стриминг</button>
+      <button class="filter-chip" data-value="universal">Универсальные</button>
+    </div>
+  </div>
+  <div class="filter-group">
+    <span class="label">Сортировка</span>
+    <select class="filter-select" id="sortSelect">
+      <option value="default">По умолчанию</option>
+      <option value="price-asc">Цена: по возрастанию</option>
+      <option value="price-desc">Цена: по убыванию</option>
+      <option value="rating-desc">По рейтингу</option>
+    </select>
+  </div>
+</div>
+
+<div class="devices" id="devicesGrid">
+
+  <div class="device-card"
+       data-price="35" data-price-range="under50"
+       data-ram="2" data-res="4k" data-use="iptv,streaming,universal" data-rating="4.3">
+    <div class="device-img">
+      📺
+      <span class="device-badge budget">Бюджет</span>
+    </div>
+    <div class="device-info">
+      <h3>Xiaomi TV Stick 4K</h3>
+      <div class="price">$35 <span>на AliExpress</span></div>
+      <div class="device-specs">
+        <span class="spec">Amlogic S905Y4</span>
+        <span class="spec">2 ГБ ОЗУ</span>
+        <span class="spec">Android TV 11</span>
+        <span class="spec">Wi-Fi 5</span>
+      </div>
+      <div class="device-actions">
+        <a href="https://aliexpress.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/xiaomi-tv-stick-4k/" class="btn btn-secondary">Обзор</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="device-card"
+       data-price="55" data-price-range="50-100"
+       data-ram="2" data-res="4k" data-use="games,streaming,universal" data-rating="4.6">
+    <div class="device-img">
+      📺
+      <span class="device-badge top">Топ</span>
+    </div>
+    <div class="device-info">
+      <h3>Amazon Fire TV Stick 4K Max</h3>
+      <div class="price">$55 <span>на Amazon</span></div>
+      <div class="device-specs">
+        <span class="spec">MediaTek MT8696</span>
+        <span class="spec">2 ГБ ОЗУ</span>
+        <span class="spec">Fire OS</span>
+        <span class="spec">Wi-Fi 6E</span>
+      </div>
+      <div class="device-actions">
+        <a href="https://amazon.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/fire-tv-stick-4k/" class="btn btn-secondary">Обзор</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="device-card"
+       data-price="120" data-price-range="over100"
+       data-ram="4" data-res="4k" data-use="iptv,games,universal" data-rating="4.8">
+    <div class="device-img">
+      📺
+      <span class="device-badge premium">Премиум</span>
+    </div>
+    <div class="device-info">
+      <h3>Ugoos AM6B Plus</h3>
+      <div class="price">$120 <span>на AliExpress</span></div>
+      <div class="device-specs">
+        <span class="spec">Amlogic S905X4</span>
+        <span class="spec">4 ГБ ОЗУ</span>
+        <span class="spec">Android 11</span>
+        <span class="spec">Gigabit LAN</span>
+      </div>
+      <div class="device-actions">
+        <a href="https://aliexpress.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/ugoos-am6b-plus/" class="btn btn-secondary">Обзор</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="empty-state" id="emptyState">Ничего не найдено по выбранным фильтрам. Попробуйте изменить условия.</div>
+
+<div class="pagination" id="pagination" style="display:none;">
+  <span class="current">1</span>
+</div>
+
+<footer class="footer">
+  <p>
+    <a href="/">Главная</a>
+    <a href="/pristavki/">Каталог</a>
+    <a href="/nastroit-iptv/">Настройка</a>
+    <a href="/pleery/">Плееры</a>
+    <a href="/faq/">FAQ</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/terms/">Terms</a>
+  </p>
+  <p style="margin-top:12px;">© 2026 TVTIME. Содержит партнёрские ссылки (Admitad, TV.TEAM).</p>
+</footer>
+
+<script>
+(function(){
+  var state = { price: 'all', ram: 'all', res: 'all', use: 'all', sort: 'default' };
+  var grid = document.getElementById('devicesGrid');
+  var cards = Array.prototype.slice.call(grid.children);
+  var countEl = document.getElementById('deviceCount');
+  var emptyEl = document.getElementById('emptyState');
+  var paginationEl = document.getElementById('pagination');
+
+  document.getElementById('filters').addEventListener('click', function(e){
+    var chip = e.target.closest('.filter-chip');
+    if (!chip) return;
+    var group = chip.closest('.filter-options');
+    var key = group.getAttribute('data-filter');
+    Array.prototype.forEach.call(group.querySelectorAll('.filter-chip'), function(c){ c.classList.remove('active'); });
+    chip.classList.add('active');
+    state[key] = chip.getAttribute('data-value');
+    apply();
+  });
+
+  document.getElementById('sortSelect').addEventListener('change', function(e){
+    state.sort = e.target.value;
+    apply();
+  });
+
+  function matches(card){
+    if (state.price !== 'all' && card.getAttribute('data-price-range') !== state.price) return false;
+    if (state.ram !== 'all' && card.getAttribute('data-ram') !== state.ram) return false;
+    if (state.res !== 'all' && card.getAttribute('data-res') !== state.res) return false;
+    if (state.use !== 'all' && (','+card.getAttribute('data-use')+',').indexOf(','+state.use+',') === -1) return false;
+    return true;
+  }
+
+  function apply(){
+    var visible = cards.filter(matches);
+
+    if (state.sort === 'price-asc') visible.sort(function(a,b){ return a.getAttribute('data-price')-b.getAttribute('data-price'); });
+    if (state.sort === 'price-desc') visible.sort(function(a,b){ return b.getAttribute('data-price')-a.getAttribute('data-price'); });
+    if (state.sort === 'rating-desc') visible.sort(function(a,b){ return b.getAttribute('data-rating')-a.getAttribute('data-rating'); });
+
+    cards.forEach(function(c){ c.style.display = 'none'; });
+    visible.forEach(function(c){ grid.appendChild(c); c.style.display = 'flex'; });
+
+    countEl.textContent = visible.length;
+    emptyEl.style.display = visible.length === 0 ? 'block' : 'none';
+    paginationEl.style.display = visible.length > 12 ? 'flex' : 'none';
+  }
+})();
+</script>
+
+</body>
+</html>
