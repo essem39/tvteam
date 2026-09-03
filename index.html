@@ -1,175 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Android TV Boxes & Streaming Devices 2026 | tvteam.online</title>
-<meta name="description" content="Independent guide to Android TV boxes and streaming devices — pick the right box, set it up, and use it for IPTV with TV.TEAM.">
-<meta property="og:title" content="Android TV Boxes & Streaming Devices | tvteam.online">
-<meta property="og:description" content="Choose an Android TV box, set it up, and stream with TV.TEAM.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://tvteam.online">
-<link rel="canonical" href="https://tvteam.online/">
-<link rel="stylesheet" href="/assets/css/style.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📺</text></svg>">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "tvteam.online",
-  "url": "https://tvteam.online",
-  "description": "Independent guide to Android TV boxes and streaming devices"
+<title>Лучшие приставки для IPTV 2026 — TVTIME</title>
+<meta name="description" content="Выбери Android TV Box для IPTV. Сравнение, цены, характеристики. Настройка TV.TEAM за 5 минут.">
+<style>
+:root {
+  --bg: #0f0f1a;
+  --bg-card: #16162a;
+  --bg-card-hover: #1e1e3a;
+  --text: #e0e0e0;
+  --text-muted: #8888a0;
+  --accent: #ff6b35;
+  --accent-hover: #ff8555;
+  --green: #00c853;
+  --border: #2a2a4a;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+  --maxw: 1200px;
 }
-</script>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { text-decoration:none; color: inherit; }
+img { max-width:100%; display:block; }
+
+/* Header */
+.header {
+  position: sticky; top:0; z-index:100;
+  background: rgba(15,15,26,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner {
+  max-width: var(--maxw); margin:0 auto;
+  padding: 16px 24px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.logo { font-size: 22px; font-weight:800; letter-spacing:-0.5px; }
+.logo span { color: var(--accent); }
+.nav { display:flex; gap: 28px; }
+.nav a { color: var(--text-muted); font-size:14px; font-weight:500; transition:0.2s; }
+.nav a:hover { color: var(--text); }
+.nav .active { color: var(--accent); }
+
+/* Hero */
+.hero {
+  max-width: var(--maxw); margin:0 auto;
+  padding: 80px 24px 60px;
+  text-align:center;
+}
+.hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 16px;
+  letter-spacing: -1px;
+}
+.hero h1 span { color: var(--accent); }
+.hero p {
+  font-size: 18px; color: var(--text-muted);
+  max-width: 600px; margin: 0 auto 32px;
+}
+.hero-badges {
+  display:flex; gap: 12px; justify-content:center; flex-wrap:wrap;
+  margin-bottom: 32px;
+}
+.badge {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 8px 16px; border-radius: 100px;
+  font-size: 13px; color: var(--text-muted);
+}
+.badge strong { color: var(--text); }
+
+/* CTA Buttons */
+.btn {
+  display:inline-flex; align-items:center; gap:8px;
+  padding: 14px 28px; border-radius: var(--radius);
+  font-size: 15px; font-weight: 600;
+  border: none; cursor: pointer; transition: 0.2s;
+}
+.btn-primary {
+  background: var(--accent); color: #fff;
+}
+.btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+.btn-secondary {
+  background: var(--bg-card); color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover { background: var(--bg-card-hover); }
+
+/* Steps */
+.steps {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 40px 24px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+@media (max-width: 768px) { .steps { grid-template-columns: 1fr; } }
+.step {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  text-align: center;
+}
+.step-num {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display:flex; align-items:center; justify-content:center;
+  font-weight: 700; font-size: 16px;
+  margin: 0 auto 16px;
+}
+.step h3 { font-size: 18px; margin-bottom: 8px; }
+.step p { font-size: 14px; color: var(--text-muted); }
+
+/* Section Title */
+.section-title {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 60px 24px 24px;
+  display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:12px;
+}
+.section-title h2 { font-size: 28px; font-weight: 700; }
+.section-title a { font-size: 14px; color: var(--accent); }
+
+/* Device Grid */
+.devices {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 0 24px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+.device-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: 0.25s;
+  display:flex; flex-direction:column;
+}
+.device-card:hover {
+  transform: translateY(-4px);
+  border-color: #3a3a5a;
+  box-shadow: var(--shadow);
+}
+.device-img {
+  height: 200px;
+  background: linear-gradient(135deg, #1a1a35 0%, #252550 100%);
+  display:flex; align-items:center; justify-content:center;
+  font-size: 64px;
+  position: relative;
+}
+.device-badge {
+  position: absolute; top: 12px; left: 12px;
+  background: var(--green); color: #000;
+  font-size: 11px; font-weight: 700;
+  padding: 4px 10px; border-radius: 6px;
+  text-transform: uppercase;
+}
+.device-badge.budget { background: #ffd600; color: #000; }
+.device-badge.premium { background: #ff6b35; color: #fff; }
+.device-info { padding: 20px; flex:1; display:flex; flex-direction:column; }
+.device-info h3 { font-size: 18px; margin-bottom: 6px; }
+.device-info .price { font-size: 22px; font-weight: 700; color: var(--accent); margin-bottom: 12px; }
+.device-info .price span { font-size: 13px; color: var(--text-muted); font-weight: 400; }
+.device-specs {
+  display:flex; flex-wrap:wrap; gap: 8px;
+  margin-bottom: 16px;
+}
+.spec {
+  background: rgba(255,255,255,0.04);
+  padding: 4px 10px; border-radius: 6px;
+  font-size: 12px; color: var(--text-muted);
+}
+.device-actions { margin-top: auto; display:flex; gap: 10px; flex-wrap:wrap; }
+.device-actions .btn { flex:1; min-width: 120px; justify-content:center; font-size: 13px; padding: 10px 16px; }
+
+/* TV.TEAM Block */
+.partner {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 0 24px 60px;
+}
+.partner-card {
+  background: linear-gradient(135deg, #1a1a35 0%, #1e1e40 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 40px;
+  display: grid; grid-template-columns: 1fr 280px; gap: 40px; align-items:center;
+}
+@media (max-width: 768px) { .partner-card { grid-template-columns: 1fr; } }
+.partner-card h2 { font-size: 24px; margin-bottom: 12px; }
+.partner-card h2 span { color: var(--accent); }
+.partner-card p { color: var(--text-muted); margin-bottom: 20px; }
+.partner-features {
+  display:flex; flex-wrap:wrap; gap: 12px;
+  margin-bottom: 24px;
+}
+.partner-features .spec { background: rgba(0,200,83,0.08); color: var(--green); border: 1px solid rgba(0,200,83,0.2); }
+.partner-card .btn { padding: 14px 32px; font-size: 15px; }
+.partner-logo {
+  width: 100%; height: 180px;
+  background: rgba(255,255,255,0.03);
+  border-radius: var(--radius);
+  display:flex; align-items:center; justify-content:center;
+  font-size: 48px; color: var(--text-muted);
+  border: 1px dashed var(--border);
+}
+
+/* Categories */
+.categories {
+  max-width: var(--maxw); margin: 0 auto;
+  padding: 0 24px 60px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+@media (max-width: 900px) { .categories { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .categories { grid-template-columns: 1fr; } }
+.cat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+  transition: 0.2s;
+}
+.cat-card:hover { border-color: var(--accent); }
+.cat-icon { font-size: 32px; margin-bottom: 12px; }
+.cat-card h4 { font-size: 15px; margin-bottom: 4px; }
+.cat-card p { font-size: 13px; color: var(--text-muted); }
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+.footer a { color: var(--text-muted); margin: 0 12px; }
+.footer a:hover { color: var(--text); }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav { display: none; }
+  .hero { padding: 50px 20px 40px; }
+  .section-title { padding: 40px 20px 16px; }
+  .devices { padding: 0 20px 30px; }
+  .partner { padding: 0 20px 40px; }
+  .partner-card { padding: 24px; }
+  .categories { padding: 0 20px 40px; }
+}
+</style>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="header-inner">
-      <a href="/" class="logo">📺 <span>TV</span>TEAM</a>
-      <nav>
-        <a href="/devices/">Devices</a>
-        <a href="/iptv-setup">IPTV Setup</a>
-        <a href="/compare">Compare</a>
-        <a href="/guides/">Guides</a>
-        <a href="/faq">FAQ</a>
-        <a href="https://tv.team" target="_blank" rel="noopener nofollow" class="nav-cta">TV.TEAM →</a>
-      </nav>
-      <button class="burger" aria-label="Menu" aria-expanded="false">
-        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div class="mobile-menu">
-    <a href="/devices/">Devices</a>
-    <a href="/iptv-setup">IPTV Setup</a>
-    <a href="/compare">Compare</a>
-    <a href="/guides/">Guides</a>
-    <a href="/faq">FAQ</a>
+<header class="header">
+  <div class="header-inner">
+    <div class="logo">TV<span>TIME</span></div>
+    <nav class="nav">
+      <a href="/pristavki/">Каталог</a>
+      <a href="/sravnenie/">Сравнение</a>
+      <a href="/nastroit-iptv/">Настройка IPTV</a>
+      <a href="/pleery/">Плееры</a>
+      <a href="/faq/">FAQ</a>
+    </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="container">
-    <div class="hero-badge">✦ Updated for 2026</div>
-    <h1>Find the right <span class="highlight">Android TV Box</span> — then stream with TV.TEAM</h1>
-    <p>We help you choose an Android TV Box or streaming device, set it up in minutes, and use it for IPTV through our partner TV.TEAM.</p>
-    <div class="hero-actions">
-      <a href="/devices/" class="btn btn-primary">Browse Devices →</a>
-      <a href="/iptv-setup" class="btn btn-outline">How IPTV Setup Works</a>
-    </div>
+  <h1>Выбери <span>приставку</span> — смотри всё</h1>
+  <p>Android TV Box для IPTV, стриминга и Smart TV. Сравнение, цены, инструкции. Работаем с TV.TEAM.</p>
+  <div class="hero-badges">
+    <span class="badge">📺 <strong>4K / 8K</strong></span>
+    <span class="badge">⚡ <strong>Android 11+</strong></span>
+    <span class="badge">🎮 <strong>Игры + стриминг</strong></span>
+    <span class="badge">📡 <strong>IPTV готов</strong></span>
+  </div>
+  <a href="/pristavki/" class="btn btn-primary">Смотреть каталог →</a>
+</section>
+
+<section class="steps">
+  <div class="step">
+    <div class="step-num">1</div>
+    <h3>Выбери приставку</h3>
+    <p>Сравни модели по цене, производительности и возможностям. Фильтры по бюджету и задачам.</p>
+  </div>
+  <div class="step">
+    <div class="step-num">2</div>
+    <h3>Получи и настрой</h3>
+    <p>Пошаговые гайды: распаковка, подключение к Wi-Fi, установка приложений.</p>
+  </div>
+  <div class="step">
+    <div class="step-num">3</div>
+    <h3>Подключи TV.TEAM</h3>
+    <p>Единственный IPTV-сервис, который мы рекомендуем. Настройка за 5 минут.</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Three steps to watching IPTV on your TV</h2>
-    <p class="section-sub">From choosing hardware to your first stream.</p>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>1. Pick a device</h3>
-        <p>Browse Android TV Boxes by budget, performance, or 4K/8K support — or use a Smart TV you already own.</p>
+<div class="section-title">
+  <h2>🔥 Топ приставок для IPTV</h2>
+  <a href="/pristavki/">Все модели →</a>
+</div>
+
+<section class="devices">
+
+  <article class="device-card">
+    <div class="device-img">
+      <span>📺</span>
+      <span class="device-badge budget">Бюджет</span>
+    </div>
+    <div class="device-info">
+      <h3>Xiaomi TV Stick 4K</h3>
+      <div class="price">$35 <span>на AliExpress</span></div>
+      <div class="device-specs">
+        <span class="spec">4K HDR</span>
+        <span class="spec">2 ГБ ОЗУ</span>
+        <span class="spec">Android TV 11</span>
+        <span class="spec">Wi-Fi 5</span>
       </div>
-      <div class="feature-card">
-        <h3>2. Set it up</h3>
-        <p>Follow our setup guides to get your box or TV ready for streaming apps in a few minutes.</p>
-      </div>
-      <div class="feature-card">
-        <h3>3. Stream with TV.TEAM</h3>
-        <p>Install TV.TEAM, sign in, and start watching. It's the only IPTV service we recommend.</p>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">Идеален для IPTV и стриминга. Компактный, быстрый, голосовой пульт.</p>
+      <div class="device-actions">
+        <a href="https://aliexpress.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить на AliExpress</a>
+        <a href="/pristavki/xiaomi-tv-stick-4k/" class="btn btn-secondary">Обзор</a>
       </div>
     </div>
+  </article>
+
+  <article class="device-card">
+    <div class="device-img">
+      <span>🔥</span>
+      <span class="device-badge premium">Топ</span>
+    </div>
+    <div class="device-info">
+      <h3>Amazon Fire TV Stick 4K Max</h3>
+      <div class="price">$55 <span>на Amazon</span></div>
+      <div class="device-specs">
+        <span class="spec">4K HDR10+</span>
+        <span class="spec">2 ГБ ОЗУ</span>
+        <span class="spec">Wi-Fi 6E</span>
+        <span class="spec">Dolby Vision</span>
+      </div>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">Лучший выбор для Amazon Prime, Netflix и IPTV. Wi-Fi 6E — никаких лагов.</p>
+      <div class="device-actions">
+        <a href="https://amazon.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить на Amazon</a>
+        <a href="/pristavki/fire-tv-stick-4k/" class="btn btn-secondary">Обзор</a>
+      </div>
+    </div>
+  </article>
+
+  <article class="device-card">
+    <div class="device-img">
+      <span>🚀</span>
+      <span class="device-badge premium">Премиум</span>
+    </div>
+    <div class="device-info">
+      <h3>Ugoos AM6B Plus</h3>
+      <div class="price">$120 <span>на AliExpress</span></div>
+      <div class="device-specs">
+        <span class="spec">8K</span>
+        <span class="spec">4 ГБ ОЗУ</span>
+        <span class="spec">64 ГБ</span>
+        <span class="spec">Gigabit LAN</span>
+      </div>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">Мощь для всего: IPTV, игры, 8K-видео, сервер. Для тех, кто не ищет компромиссов.</p>
+      <div class="device-actions">
+        <a href="https://aliexpress.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить на AliExpress</a>
+        <a href="/pristavki/ugoos-am6b-plus/" class="btn btn-secondary">Обзор</a>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+<div class="section-title">
+  <h2>📂 Категории</h2>
+</div>
+
+<section class="categories">
+  <a href="/pristavki/?cat=budget" class="cat-card">
+    <div class="cat-icon">💸</div>
+    <h4>Бюджетные</h4>
+    <p>До $50</p>
+  </a>
+  <a href="/pristavki/?cat=premium" class="cat-card">
+    <div class="cat-icon">🏆</div>
+    <h4>Премиум</h4>
+    <p>$50–100</p>
+  </a>
+  <a href="/pristavki/?cat=gaming" class="cat-card">
+    <div class="cat-icon">🎮</div>
+    <h4>Для игр</h4>
+    <p>GPU + ОЗУ</p>
+  </a>
+  <a href="/pristavki/?cat=4k" class="cat-card">
+    <div class="cat-icon">📺</div>
+    <h4>4K / 8K</h4>
+    <p>Максимум качества</p>
+  </a>
+</section>
+
+<div class="section-title">
+  <h2>📡 Наш IPTV-партнёр</h2>
+</div>
+
+<section class="partner">
+  <div class="partner-card">
+    <div>
+      <h2>TV<span>.TEAM</span> — единственный сервис, который мы рекомендуем</h2>
+      <p>Проверили на каждой приставке из каталога. Стабильные потоки, FHD/4K, поддержка 24/7. Настройка за 5 минут через наши гайды.</p>
+      <div class="partner-features">
+        <span class="spec">✅ 4 200+ каналов</span>
+        <span class="spec">✅ 20 000+ фильмов</span>
+        <span class="spec">✅ FHD / 4K</span>
+        <span class="spec">✅ 72 часа триала</span>
+        <span class="spec">✅ Android TV + Smart TV</span>
+        <span class="spec">✅ От $1/мес</span>
+      </div>
+      <a href="https://tv.team/?ref=tvteam" class="btn btn-primary" target="_blank" rel="nofollow">Перейти на TV.TEAM →</a>
+      <a href="/tvteam/" style="margin-left:16px;font-size:14px;color:var(--text-muted);">Подробнее о сервисе</a>
+    </div>
+    <div class="partner-logo">TV.TEAM</div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Device categories</h2>
-    <p class="section-sub">Browse Android TV boxes and streaming devices by category.</p>
-    <div class="devices-grid">
-      <div class="device-card">
-        <h3>💸 Budget Boxes</h3>
-        <p>Affordable Android TV boxes for basic streaming and IPTV.</p>
-        <a href="/devices/budget" class="btn btn-outline">View category →</a>
-      </div>
-      <div class="device-card">
-        <h3>🏆 Premium Boxes</h3>
-        <p>Top-tier performance for demanding apps and multitasking.</p>
-        <a href="/devices/premium" class="btn btn-outline">View category →</a>
-      </div>
-      <div class="device-card">
-        <h3>🎮 Gaming Boxes</h3>
-        <p>Android TV boxes built for gaming plus streaming.</p>
-        <a href="/devices/gaming" class="btn btn-outline">View category →</a>
-      </div>
-      <div class="device-card">
-        <h3>📺 4K / 8K Boxes</h3>
-        <p>High-resolution playback for large or premium displays.</p>
-        <a href="/devices/4k" class="btn btn-outline">View category →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <h2 class="section-title">Our only IPTV partner</h2>
-    <p class="section-sub">We test and recommend one service — no confusing rankings.</p>
-    <div class="feature-card" style="max-width:480px;">
-      <h3>📺 TV.TEAM</h3>
-      <p>The IPTV service we set up and use on every device we review. Reliable streams, easy setup, works on Android TV boxes and Smart TVs.</p>
-      <a href="https://tv.team" target="_blank" rel="noopener nofollow" class="btn btn-primary" style="margin-top:12px;">Visit TV.TEAM →</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong> tvteam.online is an independent guide to Android TV boxes and streaming devices. We do not sell hardware or IPTV subscriptions ourselves. Links to TV.TEAM are affiliate links — we may earn a commission at no extra cost to you.
-    </div>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <div class="logo" style="font-size:1.1rem;">📺 <span>TV</span>TEAM</div>
-        <p>Independent guide to Android TV boxes, streaming devices, and setting them up for IPTV. Updated for 2026.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Devices</h4>
-        <ul>
-          <li><a href="/devices/">All Devices</a></li>
-          <li><a href="/devices/budget">Budget Picks</a></li>
-          <li><a href="/devices/premium">Premium Picks</a></li>
-          <li><a href="/devices/4k">4K / 8K Boxes</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>IPTV</h4>
-        <ul>
-          <li><a href="/iptv-setup">IPTV Setup Guide</a></li>
-          <li><a href="/compare">Compare Devices</a></li>
-          <li><a href="https://tv.team" target="_blank" rel="noopener nofollow">TV.TEAM</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Info</h4>
-        <ul>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/faq">FAQ</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/terms">Terms of Service</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 tvteam.online — All rights reserved.</span>
-      <span>contact@tvteam.online</span>
-    </div>
-  </div>
+<footer class="footer">
+  <p>
+    <a href="/">Главная</a>
+    <a href="/pristavki/">Каталог</a>
+    <a href="/nastroit-iptv/">Настройка</a>
+    <a href="/pleery/">Плееры</a>
+    <a href="/faq/">FAQ</a>
+    <a href="/privacy/">Privacy</a>
+    <a href="/terms/">Terms</a>
+  </p>
+  <p style="margin-top:12px;">© 2026 TVTIME. Содержит партнёрские ссылки (Admitad, TV.TEAM).</p>
 </footer>
 
-<script src="/assets/js/main.js"></script>
 </body>
 </html>
