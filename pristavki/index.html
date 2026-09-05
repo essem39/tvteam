@@ -196,41 +196,82 @@ img { max-width:100%; display:block; }
   .devices { padding: 24px 20px 30px; }
 }
 </style>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "ItemList",
   "itemListElement": [
     {
-      "@type": "ListItem", "position": 1,
+      "@type": "ListItem",
+      "position": 1,
       "item": {
         "@type": "Product",
-        "name": "Xiaomi TV Stick 4K",
-        "url": "https://tvteam.online/pristavki/xiaomi-tv-stick-4k/",
-        "offers": { "@type": "Offer", "price": "35", "priceCurrency": "USD" }
+        "name": "Network Set-Top Box Android 14.0 4K",
+        "url": "https://tvteam.online/pristavki/android-tvbox-network/",
+        "offers": {
+          "@type": "Offer",
+          "price": "25.00",
+          "priceCurrency": "USD"
+        }
       }
     },
     {
-      "@type": "ListItem", "position": 2,
+      "@type": "ListItem",
+      "position": 2,
       "item": {
         "@type": "Product",
-        "name": "Amazon Fire TV Stick 4K Max",
-        "url": "https://tvteam.online/pristavki/fire-tv-stick-4k/",
-        "offers": { "@type": "Offer", "price": "55", "priceCurrency": "USD" }
+        "name": "X96Q PRO Android 10 TV Box",
+        "url": "https://tvteam.online/pristavki/x96q-pro/",
+        "offers": {
+          "@type": "Offer",
+          "price": "25.00",
+          "priceCurrency": "USD"
+        }
       }
     },
     {
-      "@type": "ListItem", "position": 3,
+      "@type": "ListItem",
+      "position": 3,
       "item": {
         "@type": "Product",
-        "name": "Ugoos AM6B Plus",
-        "url": "https://tvteam.online/pristavki/ugoos-am6b-plus/",
-        "offers": { "@type": "Offer", "price": "120", "priceCurrency": "USD" }
+        "name": "HD 4K TV98 Android 12 TV Box",
+        "url": "https://tvteam.online/pristavki/tv98-android12/",
+        "offers": {
+          "@type": "Offer",
+          "price": "25.00",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Product",
+        "name": "TV Dongle R3+ Android, Wi-Fi 6",
+        "url": "https://tvteam.online/pristavki/tv-dongle-r3-plus/",
+        "offers": {
+          "@type": "Offer",
+          "price": "46.68",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Product",
+        "name": "Amlogic S905X4 Board Android 11",
+        "url": "https://tvteam.online/pristavki/s905x4-board/",
+        "offers": {
+          "@type": "Offer",
+          "price": "82.37",
+          "priceCurrency": "USD"
+        }
       }
     }
   ]
-}
-</script>
+}</script>
 </head>
 <body>
 
@@ -250,7 +291,7 @@ img { max-width:100%; display:block; }
 <div class="page-hero">
   <h1>Android TV Box и стриминговые приставки</h1>
   <p>Подборка приставок для IPTV, стриминга и игр — с честными характеристиками и ссылками на проверенные магазины. Каждая модель совместима с TV.TEAM.</p>
-  <div class="count-badge"><strong id="deviceCount">3</strong> модели в каталоге</div>
+  <div class="count-badge"><strong id="deviceCount">5</strong> модели в каталоге</div>
 </div>
 
 <div class="filters" id="filters">
@@ -263,16 +304,7 @@ img { max-width:100%; display:block; }
       <button class="filter-chip" data-value="over100">$100+</button>
     </div>
   </div>
-  <div class="filter-group">
-    <span class="label">ОЗУ</span>
-    <div class="filter-options" data-filter="ram">
-      <button class="filter-chip active" data-value="all">Все</button>
-      <button class="filter-chip" data-value="2">2 ГБ</button>
-      <button class="filter-chip" data-value="4">4 ГБ</button>
-      <button class="filter-chip" data-value="8">8 ГБ</button>
-    </div>
-  </div>
-  <div class="filter-group">
+<div class="filter-group">
     <span class="label">Разрешение</span>
     <div class="filter-options" data-filter="res">
       <button class="filter-chip active" data-value="all">Все</button>
@@ -280,17 +312,7 @@ img { max-width:100%; display:block; }
       <button class="filter-chip" data-value="8k">8K</button>
     </div>
   </div>
-  <div class="filter-group">
-    <span class="label">Назначение</span>
-    <div class="filter-options" data-filter="use">
-      <button class="filter-chip active" data-value="all">Все</button>
-      <button class="filter-chip" data-value="iptv">IPTV</button>
-      <button class="filter-chip" data-value="games">Игры</button>
-      <button class="filter-chip" data-value="streaming">Стриминг</button>
-      <button class="filter-chip" data-value="universal">Универсальные</button>
-    </div>
-  </div>
-  <div class="filter-group">
+<div class="filter-group">
     <span class="label">Сортировка</span>
     <select class="filter-select" id="sortSelect">
       <option value="default">По умолчанию</option>
@@ -302,72 +324,93 @@ img { max-width:100%; display:block; }
 </div>
 
 <div class="devices" id="devicesGrid">
-
   <div class="device-card"
-       data-price="35" data-price-range="under50"
-       data-ram="2" data-res="4k" data-use="iptv,streaming,universal" data-rating="4.3">
-    <div class="device-img">
-      📺
+       data-price="25.00" data-price-range="under50"
+       data-badge="budget" data-rating="4.1">
+    <div class="device-img" style="background-image:url('https://ae-pic-a1.aliexpress-media.com/kf/S18f4958a9b9849d89269a94b6f586c8c1.jpg'); background-size:cover; background-position:center;">
       <span class="device-badge budget">Бюджет</span>
     </div>
     <div class="device-info">
-      <h3>Xiaomi TV Stick 4K</h3>
-      <div class="price">$35 <span>на AliExpress</span></div>
+      <h3>Network Set-Top Box Android 14.0 4K</h3>
+      <div class="price">$25.00 <span>на AliExpress</span></div>
       <div class="device-specs">
-        <span class="spec">Amlogic S905Y4</span>
-        <span class="spec">2 ГБ ОЗУ</span>
-        <span class="spec">Android TV 11</span>
-        <span class="spec">Wi-Fi 5</span>
+        <span class="spec">Android 14.0</span><span class="spec">4K, поддержка HD</span><span class="spec">Сетевой медиаплеер / Set-Top Box</span>
       </div>
       <div class="device-actions">
-        <a href="https://aliexpress.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
-        <a href="/pristavki/xiaomi-tv-stick-4k/" class="btn btn-secondary">Обзор</a>
+        <a href="https://rzekl.com/g/1e8d114494b822b4c82216525dc3e8/?ulp=https%3A%2F%2Fs.click.aliexpress.com%2Fdeep_link.htm%3Faff_short_key%3D_c3s1yQkJ%26dl_target_url%3Dhttps%253A%252F%252Fwww.aliexpress.com%252Fitem%252F1005010688310435.html%253Fpdp_npi%253D6%252540dis%252521USD%25252143.11%25252125.00%252521%252521%252521288.00%252521167.04%252521%2525402151fce817884980773748506e0cf1%25252112000053195755447%252521affd%252521%252521%252521%2525211%2525210%252521%26hot_product%3D0&i=5&f_id=50002" class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/android-tvbox-network/" class="btn btn-secondary">Обзор</a>
       </div>
     </div>
   </div>
-
   <div class="device-card"
-       data-price="55" data-price-range="50-100"
-       data-ram="2" data-res="4k" data-use="games,streaming,universal" data-rating="4.6">
-    <div class="device-img">
-      📺
+       data-price="25.00" data-price-range="under50"
+       data-badge="budget" data-rating="4.3">
+    <div class="device-img" style="background-image:url('https://ae-pic-a1.aliexpress-media.com/kf/Saa2af553d2f9432caebe4b5c853d561fn.png'); background-size:cover; background-position:center;">
+      <span class="device-badge budget">Бюджет</span>
+    </div>
+    <div class="device-info">
+      <h3>X96Q PRO Android 10 TV Box</h3>
+      <div class="price">$25.00 <span>на AliExpress</span></div>
+      <div class="device-specs">
+        <span class="spec">Allwinner H313, 4 ядра</span><span class="spec">Android 10</span><span class="spec">2.4 ГГц</span><span class="spec">4K @ 60 fps, декодер H.265</span>
+      </div>
+      <div class="device-actions">
+        <a href="https://rzekl.com/g/1e8d114494b822b4c82216525dc3e8/?ulp=https%3A%2F%2Fs.click.aliexpress.com%2Fdeep_link.htm%3Faff_short_key%3D_c3s1yQkJ%26dl_target_url%3Dhttps%253A%252F%252Fwww.aliexpress.com%252Fitem%252F1005012526352591.html%253Fpdp_npi%253D6%252540dis%252521USD%25252150.00%25252125.00%252521%252521%25252150.00%25252125.00%252521%2525402151fce817884980773748506e0cf1%25252112000058597131746%252521affd%252521%252521%252521%2525211%2525210%252521%26hot_product%3D0&i=5&f_id=50002" class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/x96q-pro/" class="btn btn-secondary">Обзор</a>
+      </div>
+    </div>
+  </div>
+  <div class="device-card"
+       data-price="25.00" data-price-range="under50"
+       data-badge="budget" data-rating="4.2">
+    <div class="device-img" style="background-image:url('https://ae-pic-a1.aliexpress-media.com/kf/S814ba930fd05415caf980ccf22fdc720Q.jpg'); background-size:cover; background-position:center;">
+      <span class="device-badge budget">Бюджет</span>
+    </div>
+    <div class="device-info">
+      <h3>HD 4K TV98 Android 12 TV Box</h3>
+      <div class="price">$25.00 <span>на AliExpress</span></div>
+      <div class="device-specs">
+        <span class="spec">H313, 4 ядра</span><span class="spec">Android 12</span><span class="spec">Двухдиапазонный 2.4 ГГц / 5.8 ГГц</span><span class="spec">4K</span>
+      </div>
+      <div class="device-actions">
+        <a href="https://rzekl.com/g/1e8d114494b822b4c82216525dc3e8/?ulp=https%3A%2F%2Fs.click.aliexpress.com%2Fdeep_link.htm%3Faff_short_key%3D_c3s1yQkJ%26dl_target_url%3Dhttps%253A%252F%252Fwww.aliexpress.com%252Fitem%252F1005008511365281.html%253Fpdp_npi%253D6%252540dis%252521USD%25252125.00%25252125.00%252521%252521%25252125.00%25252125.00%252521%2525402151fd3a17884980936413086e1354%25252112000045489788052%252521affd%252521%252521%252521%2525211%2525210%252521%26hot_product%3D0&i=5&f_id=50002" class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/tv98-android12/" class="btn btn-secondary">Обзор</a>
+      </div>
+    </div>
+  </div>
+  <div class="device-card"
+       data-price="46.68" data-price-range="under50"
+       data-badge="top" data-rating="4.5">
+    <div class="device-img" style="background-image:url('https://ae-pic-a1.aliexpress-media.com/kf/Sa7f4bbe765424063ab2d790d78723acbb.jpg'); background-size:cover; background-position:center;">
       <span class="device-badge top">Топ</span>
     </div>
     <div class="device-info">
-      <h3>Amazon Fire TV Stick 4K Max</h3>
-      <div class="price">$55 <span>на Amazon</span></div>
+      <h3>TV Dongle R3+ Android, Wi-Fi 6</h3>
+      <div class="price">$46.68 <span>на AliExpress</span></div>
       <div class="device-specs">
-        <span class="spec">MediaTek MT8696</span>
-        <span class="spec">2 ГБ ОЗУ</span>
-        <span class="spec">Fire OS</span>
-        <span class="spec">Wi-Fi 6E</span>
+        <span class="spec">Rockchip RK3518</span><span class="spec">Wi-Fi 6</span><span class="spec">Bluetooth 5.0</span><span class="spec">1080p / 4K, аппаратное декодирование</span>
       </div>
       <div class="device-actions">
-        <a href="https://amazon.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
-        <a href="/pristavki/fire-tv-stick-4k/" class="btn btn-secondary">Обзор</a>
+        <a href="https://rzekl.com/g/1e8d114494b822b4c82216525dc3e8/?ulp=https%3A%2F%2Fs.click.aliexpress.com%2Fdeep_link.htm%3Faff_short_key%3D_c3s1yQkJ%26dl_target_url%3Dhttps%253A%252F%252Fwww.aliexpress.com%252Fitem%252F1005012567705593.html%253Fpdp_npi%253D6%252540dis%252521USD%252521202.99%25252146.68%252521%252521%2525211356.91%252521312.09%252521%2525402140f89017884764901857855e0f43%25252112000058750208609%252521affd%252521%252521%252521%2525211%2525210%252521%26hot_product%3D0&i=5&f_id=50002" class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/tv-dongle-r3-plus/" class="btn btn-secondary">Обзор</a>
       </div>
     </div>
   </div>
-
   <div class="device-card"
-       data-price="120" data-price-range="over100"
-       data-ram="4" data-res="4k" data-use="iptv,games,universal" data-rating="4.8">
-    <div class="device-img">
-      📺
+       data-price="82.37" data-price-range="50-100"
+       data-badge="premium" data-rating="4.6">
+    <div class="device-img" style="background-image:url('https://ae-pic-a1.aliexpress-media.com/kf/S36abc262d4d04b2dbfd9e3fd6a07bbf2S.jpg'); background-size:cover; background-position:center;">
       <span class="device-badge premium">Премиум</span>
     </div>
     <div class="device-info">
-      <h3>Ugoos AM6B Plus</h3>
-      <div class="price">$120 <span>на AliExpress</span></div>
+      <h3>Amlogic S905X4 Board Android 11</h3>
+      <div class="price">$82.37 <span>на AliExpress</span></div>
       <div class="device-specs">
-        <span class="spec">Amlogic S905X4</span>
-        <span class="spec">4 ГБ ОЗУ</span>
-        <span class="spec">Android 11</span>
-        <span class="spec">Gigabit LAN</span>
+        <span class="spec">Amlogic S905X4, 4 ядра ARM Cortex-A55</span><span class="spec">Android 11</span><span class="spec">2.4G / 5G</span><span class="spec">варианты 16 / 32 / 64 ГБ</span>
       </div>
       <div class="device-actions">
-        <a href="https://aliexpress.com/..." class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
-        <a href="/pristavki/ugoos-am6b-plus/" class="btn btn-secondary">Обзор</a>
+        <a href="https://rzekl.com/g/1e8d114494b822b4c82216525dc3e8/?ulp=https%3A%2F%2Fs.click.aliexpress.com%2Fdeep_link.htm%3Faff_short_key%3D_c3s1yQkJ%26dl_target_url%3Dhttps%253A%252F%252Fwww.aliexpress.com%252Fitem%252F1005010070561755.html%253Fpdp_npi%253D6%252540dis%252521USD%25252182.37%25252182.37%252521%252521%252521550.62%252521550.62%252521%252540212a7b8d17884776755118048e1096%25252112000051029686813%252521affd%252521%252521%252521%2525211%2525210%252521%26hot_product%3D0&i=5&f_id=50002" class="btn btn-primary" target="_blank" rel="nofollow">Купить</a>
+        <a href="/pristavki/s905x4-board/" class="btn btn-secondary">Обзор</a>
       </div>
     </div>
   </div>
@@ -395,7 +438,7 @@ img { max-width:100%; display:block; }
 
 <script>
 (function(){
-  var state = { price: 'all', ram: 'all', res: 'all', use: 'all', sort: 'default' };
+  var state = { price: 'all', sort: 'default' };
   var grid = document.getElementById('devicesGrid');
   var cards = Array.prototype.slice.call(grid.children);
   var countEl = document.getElementById('deviceCount');
@@ -420,9 +463,6 @@ img { max-width:100%; display:block; }
 
   function matches(card){
     if (state.price !== 'all' && card.getAttribute('data-price-range') !== state.price) return false;
-    if (state.ram !== 'all' && card.getAttribute('data-ram') !== state.ram) return false;
-    if (state.res !== 'all' && card.getAttribute('data-res') !== state.res) return false;
-    if (state.use !== 'all' && (','+card.getAttribute('data-use')+',').indexOf(','+state.use+',') === -1) return false;
     return true;
   }
 
