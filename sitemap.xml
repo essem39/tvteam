@@ -2,9 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tvteam.online/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://tvteam.online/pristavki/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://tvteam.online/pristavki/xiaomi-tv-stick-4k/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tvteam.online/pristavki/fire-tv-stick-4k/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://tvteam.online/pristavki/ugoos-am6b-plus/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tvteam.online/pristavki/android-tvbox-network/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tvteam.online/pristavki/x96q-pro/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tvteam.online/pristavki/tv98-android12/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://tvteam.online/pristavki/tv-dongle-r3-plus/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tvteam.online/pristavki/s905x4-board/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://tvteam.online/nastroit-iptv/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://tvteam.online/nastroit-iptv-android-tv/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://tvteam.online/nastroit-iptv-smart-tv/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
